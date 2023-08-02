@@ -4,10 +4,410 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome github</title>
+    <title>chorme </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        .container{
+            display: flex;
+            gap: 5px;
+            width: 90%;
+            margin: 30px auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+    .item{
+        /* background-color: aqua; */
+        text-align: center;
+        padding:  30px;
+        transition: all .5s ease-in-out;
+        border-radius: 10px;
+        position: relative;
+    }
+    .dot{
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        font-size: 30px;
+        transition: all .6s ease;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .item:hover{
+        background-color: rgba(128, 128, 128, 0.603);
+        color: white;
+        
+
+    }
+
+    .item:hover .dot{
+        animation: fade .5s  forwards;
+        
+    }
+    p{
+        text-transform: capitalize;
+    }
+
+    
+    @keyframes fade{
+        0%{
+            opacity: 1;
+            transform: translateX(-10px);
+        }
+       100%{
+            opacity: 1;
+        }
+      
+    }
+    .icon{
+        display: flex;
+        justify-content: center;
+        padding: 25px; 
+        color: goldenrod;
+        font-size: 22px;
+        background-color:white;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 6px grey;
+
+    }
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .img img{
+        width: 90px;
+    }
+    .input{
+        width: 65%;
+        margin: 50px auto;
+        position: relative;
+
+
+    }
+    input{
+        width: 100%;
+        padding: 20px 55px;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 3px grey;
+        border-radius: 5px;
+        font-size: 18px;
+
+    }
+    .fa-search{
+        position: absolute;
+        left: 30px;
+        top: 24px;
+        color: grey;
+    }
+    input:focus{
+        box-shadow: 0 0 0 1px grey;
+
+    }
+    .wrappper{
+        margin: 100px 0;
+    }
+    @media(max-width:575px){
+        .container{
+            width: 100%;
+        }
+        .icon{
+        padding: 10px; 
+
+    }
+    .input{
+        width: 90%;
+      
+
+    }
+    
+
+    }
+  
+   .con{
+    margin: 20px;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+
+   }
+   .con button{
+    float: left;
+    padding: 10px 30px;
+    border: none;
+    margin-right: 2px;
+    color: white;
+    background-color: cadetblue;
+    font-size: 18px;
+
+
+
+   }
+   .conatct{
+    width: 80%;
+    margin: 20px auto;
+    animation: fade .7s  ease-in-out;
+    display: none;
+    clear: both;
+   }
+   
+   @keyframes fade{
+
+    from{
+        opacity: 0;
+        transform: translate(100px);
+    }
+    to{
+        opacity: .7;
+
+    }
+   }
+   h3{
+    font-size: 29px;
+    margin: 10px 0;
+   }
+   .conatct p{
+    width: 60%;
+    text-align: justify;
+    text-align-last: right;
+    letter-spacing: 1px;
+    line-height: 22px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+
+   }
+
+   .con .active{
+    background-color: crimson;
+    transition: all .5s ease;
+    border-radius: 5px;
+   }
+
+  
+   
+    </style>
 </head>
 <body>
-    <h1>welcome git hub</h1>
+
+   
+    <!-- <h1>What are operating systems </h1>
+
+    <pre>
+        Intro to operating systems
+        how OS Work
+    </pre> -->
+    <!-- main wrapper start firefox  -->
+
+    <div class="wrappper">
+
+        <!-- heder part input etc  -->
+        <div class="img">
+            <img src="chrome://branding/content/about-logo.png" alt="">
+            <img src="chrome://branding/content/firefox-wordmark.svg" alt="chrme">
+        </div>
+
+        <div class="input" data-aos="fade-left">
+            <input type="text" placeholder="search for google search" title="searc  for google search">
+
+            <i class="fa fa-search"></i>
+
+        </div>
+        <!-- //heder part input etc  -->
+
+        <!-- bottom  part start  -->
+
     
+<div class="container"  data-aos="fade-right">
+
+    <!-- item start  -->
+   
+    <div class="item" data-aos="fade-left" data-aos="fade-up">
+        <p class="icon"><i class="fa  fa-user"></i></p>
+         <p >localhost</p>
+         <p class="dot">...</p>
+ </div>
+    <div class="item" data-aos="fade-down">
+        <p class="icon"><i class="fab fa-youtube" aria-hidden="true"></i>
+        </p>
+         <p>Youtube</p>
+         <p class="dot">...</p>
+ </div>
+    <div class="item" data-aos="fade-right">
+        <p class="icon"><i class="fab  fa-whatsapp"></i></p>
+         <p>WhatsUp</p>
+         <p class="dot">...</p>
+ </div>
+    <div class="item" data-aos="fade-up">
+        <p class="icon"><i class="fab  fa-linkedin"></i></p>
+         <p>Linkdin</p>
+         <p class="dot">...</p>
+ </div>
+    <div class="item" data-aos="fade-up">
+        <p class="icon"><i class="fab  fa-google"></i></p>
+         <p>Google</p>
+         <p class="dot">...</p>
+ </div>
+    <div class="item" data-aos="fade-up">
+        <p class="icon"><i class="fa  fa-credit-card"></i></p>
+         <p>W3school</p>
+         <p class="dot">...</p>
+ </div>
+    <div class="item" data-aos="fade-up">
+        <p class="icon"><i class="fa  fa-home"></i></p>
+         <p>Cricbuzz</p>
+         <p class="dot">...</p>
+ </div>
+ 
+ <div class="item" data-aos="fade-up">
+     <p class="icon"><i class="fa  fa-hospital"></i></p>
+      <p>host</p>
+      <p class="dot">...</p>
+</div>
+ <div class="item" data-aos="fade-up">
+     <p class="icon"><i class="fa  fa-anchor"></i></p>
+      <p>natt</p>
+      <p class="dot">...</p>
+</div>
+ <div class="item" data-aos="fade-up">
+     <p class="icon"><i class="fa  fa-database"></i></p>
+      <p>database</p>
+      <p class="dot">...</p>
+</div>
+ <div class="item" data-aos="fade-up">
+     <p class="icon"><i class="fa  fa-add"></i></p>
+      <p>abou us</p>
+      <p class="dot">...</p>
+</div>
+ <div class="item" data-aos="fade-up">
+     <p class="icon"><i class="fa  fa-minus"></i></p>
+      <p>mdn</p>
+      <p class="dot">...</p>
+</div>
+ <div class="item" data-aos="fade-up">
+     <p class="icon"><i class="fa  fa-cross"></i></p>
+      <p>crickt</p>
+      <p class="dot">...</p>
+</div>
+ <div class="item" data-aos="fade-up">
+     <p class="icon"><i class="fa  fa-play"></i></p>
+      <p>hockey</p>
+      <p class="dot">...</p>
+</div>
+ <div class="item" data-aos="fade-up">
+     <p class="icon"><i class="fa  fa-bandage"></i></p>
+      <p>baidmetan</p>
+      <p class="dot">...</p>
+</div>
+ <div class="item" data-aos="fade-up">
+     <p class="icon"><i class="fa  fa-memory"></i></p>
+      <p>memory </p>
+      <p class="dot">...</p>
+</div>
+    <!-- item end  -->
+
+</div>
+        <!-- // bottom  part   -->
+
+
+    </div>
+
+    <!-- main wrapper end firefox  -->
+
+    <!-- btn container  -->
+    <div class="con">
+
+        <button onclick="cityName(event , 'pattoki')" id="click" class="active item">Pattoki</button>
+        <button onclick="cityName(event , 'lahore')" class="item">Lahore</button>
+        <button onclick="cityName(event , 'okara')" class="item">Okara</button>
+    
+       </div>
+    <!-- //btn container  -->
+
+
+<!-- contact about city -->
+    
+       <div class="conatct" id="pattoki">
+        <h3>Pattoki</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur saepe sequi error aspernatur. Quo accusamus quisquam ipsum alias vitae distinctio velit quam necessitatibus, voluptatem natus optio aspernatur, nulla eveniet at.</p>
+       </div>
+       <div class="conatct" id="lahore">
+        <h3>Lahore</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur saepe sequi error aspernatur. Quo accusamus quisquam ipsum alias vitae distinctio velit quam necessitatibus, voluptatem natus optio aspernatur, nulla eveniet at.</p>
+       </div>
+       <div class="conatct" id="okara">
+        <h3>Okara</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur saepe sequi error aspernatur. Quo accusamus quisquam ipsum alias vitae distinctio velit quam necessitatibus, voluptatem natus optio aspernatur, nulla eveniet at.</p>
+       </div>
+<!-- //contact about city -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+
+  AOS.init();
+let item = document.querySelectorAll(".item");
+let input = document.querySelector("input");
+input.addEventListener("input" ,function(){
+    let text = input.value.toLowerCase().trim();
+    item.forEach(element => {
+
+        if(element.innerHTML.toLowerCase().includes(text)){
+            element.style.display = "";
+        }else{
+            element.style.display = "none";
+
+        }
+
+   ;
+   
+});
+})
+
+function cityName(eve , city){
+
+    let conatct = document.querySelectorAll(".conatct");
+    let  btn = document.querySelectorAll("button");
+
+
+    conatct.forEach(elm =>{
+        elm.style.display = "none";
+    })
+    btn.forEach(elm =>{
+        elm.classList.remove("active");
+    })
+
+
+    document.getElementById(city).style.display = "block";
+    eve.currentTarget.classList.add("active");
+
+}
+
+
+document.getElementById("click").click();
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</div>
 </body>
 </html>
